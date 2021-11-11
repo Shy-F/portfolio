@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color:
+    font-family
+}
+
+header {
+    padding: 20px 35px;
+    background-color: ;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-image: url("../assets/images/hero-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+/* Nav bar / Header style start */
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: ;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    text-decoration: none;
+    color: ;
+}
+
+header nav {
+    margin: 15px 0;
+}
+
+header nav ul {
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background: ;
+    color: ;
+    border-radius: 20px;
+    text-shadow: none;
+}
+/* Header / Nav bar style end */
+
+
+
+/* If i add a footer will be here */
+
+/* sections */
+section {
+    padding: 50px;
+}
+
+/* Hero Style */
+.hero {
+    background-image: url('../assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: right;
+    align-content: flex-start;
+    padding: 0
+}
+
+.hero h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: ;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* Hero Style end */
+
+/* section title style start (add padding and border
+add margin accordingly to the border you choose) */
+.section-title {
+    font-size: 48px;
+    color: ;
+    text-align: center;
+    margin: ;
+    padding: ;
+    width: 50%
+}
+
+.primary-border{
+    border-color: ;
+}
+
+.secondary-border {
+    border: ;
+}
