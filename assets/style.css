@@ -114,3 +114,127 @@ add margin accordingly to the border you choose) */
 .secondary-border {
     border: ;
 }
+/* end section style */
+
+/* About me style */
+.intro p {
+    line-height: 1.7;
+    color: ;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+/* About me style end */
+
+/* work style start */
+.applications {
+    background: ;
+}
+
+/* add more css here once work html section is updated */
+/* end work style */
+
+/* Contact me style start */
+.contact {
+    background: ;
+}
+
+.contact h3 {
+    color: ;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+}
+
+.contact-info div{
+    color: ;
+}
+
+.contact-info p {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.contact-info a:hover {
+    color: ;
+    background: ;
+}
+/* Contact me style end */
+
+/* Utilities */
+.flex-row {
+    display: flex;
+}
+
+/* Media query for smaller desktop screens and smaller */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+}
+
+/* media query for tablets and smaller */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+
+    /* add more once work section is updated */
+}
+
+/* media query for mobile phones and smaller */
+@media screen and (max-width: 575px) {
+    .section-title {
+        width: 95%;
+    }
+
+    .intro p{
+        width: 100%;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-info > * {
+        flex: 0 100%;
+    }
+
+    /* add more once work section updated */
+}
