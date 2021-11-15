@@ -9,6 +9,7 @@
     </head>
 </html>
 <body>
+   
     <!--navigation - block level element-->
     <header>
         <h1>
@@ -17,16 +18,16 @@
         <nav>
             <ul>
                 <li>
-                    <a href="about-me">About me</a>
+                    <a href="about">About me</a>
                 </li>
                 <li>
                     <a href="work">Work</a>
                 </li>
                 <li>
-                    <a href="contact-me">Contact Me</a>
+                    <a href="contact">Contact Me</a>
                 </li>
                 <li>
-                    <a href="resume">Resume</a>
+                    <a href="https://www.linkedin.com/feed/">Resume</a>
                 </li>
             </ul>
         </nav>
@@ -35,41 +36,55 @@
 
     <!-- hero/jumbotron -->
     <section class="hero">
-        <h1>My favorite drink is Java chip 😉☕</h1>
+        <h2>My favorite drink is Java chip 😉☕</h2>
     </section>
     <!-- end hero -->
 
     <!--"About me" section-->
-    <section id="about-me" class="intro">
-        <div class="flex-row">
-            <h3 class="section-title primary-border">
-                About me
-            </h3>
-        </div>
-        <div class="flex-row">
+    <section id="about" class="intro">
+        <div class="col-1">
+            <h3>Who Am I?<br>Shybreasia Fleetwood</h3>
+            <h4>Software Developer</h4>
             <p>
-                Insert about me blah blah blah
+                Hey, I'm a Web designer and developer student from Cincinnati, Ohio. I work with Css, Java, and Api currently.
+                Have a look at some of my work and my resume. 
             </p>
+        </div>
+        <div class="col-2">
+            <img src="assets/images/img.png" class="picture">
+            <div class="color-box"></div>
         </div>
     </section>
     <!-- end "about me" section-->
 
     <!--"Work" Section-->
-    <section id="work" class="applications">
-        <div class="flex-row">
+    <main id="work" class="applications">
+        <div class="col-3">
             <h3 class="section-title primary-border">
                 Work
             </h3>
         </div>
-        <div class="flex-row">
-            <p>
-                insert work blah blah blah
-            </p>
-        </div>
-    </section>
+        <section class="box">
+        <article class="run-buddy">
+            <a href="https://shy-f.github.io/run_buddy_2.0/"><h4>Run Buddy</h4></a>
+        </article>
+        <article class="project">
+            <a href=""><h4>Project 2</h4></a>
+        </article>
+        <article class="project">
+            <a href=""><h4>Project 3</h4></a>
+        </article>
+        <article class="project">
+            <a href=""><h4>Project 4</h4></a>
+        </article>
+        <article class="project">
+            <a href=""><h4>Project 5</h4></a>
+        </article>
+        </section>
+    </main>
     <!-- End "Work" section-->
     <!-- "Contact me" Section-->
-    <section id="contact-me" class="contact">
+    <section id="contact" class="contact">
         <div class="flex-row">
             <h3 class="section-title primary-border">
                 Contact Me
@@ -78,16 +93,15 @@
         <div class="contact-info secondary-border">
         <div class="flex-row">
             <p>
-                Call Me! Beep Me! If You Want To Reach Me!
+                P: <a href="cell:515.259.5196">Call Me!</a><br>
+                E: <a href="mailto://fleetwoodshybreasia@gmail.com">Beep Me!</a> <br>If You Want To Reach Me
             </p>
-            P: <a href="cell:515.259.5196">Call Me!</a>
-            E: <a href="mailto://fleetwoodshybreasia@gmail.com">Beep Me!</a>
         </div>
         </div>
         <br/>
     </section>
     <!-- "Contact Me" section end-->
     <section id="Resume" class=history>
-        <a href="resume.html">Check Out My Credentials</a>
+        <a href="https://www.linkedin.com/feed/">Check Out My Credentials</a>
     </section>
 </body>

@@ -1,27 +1,25 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+:root {
+    --primary-color:
+    --secondary-color:
+    --tertiary-color: #84e8ca;
 }
 
 body {
-    color:
-    font-family
+    color: #84e8ca
+    font-family: helvetica, Arial, sans-serif;
+    
 }
 
 header {
     padding: 20px 35px;
-    background-color: ;
+    background-color:#84e8ca ;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-image: url("../assets/images/hero-bg.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
+    border-color: #000;
     z-index: 9999;
 }
 
@@ -30,13 +28,13 @@ header h1 {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
-    color: ;
+    color:#fff;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
     text-decoration: none;
-    color: ;
+    color:#fff;
 }
 
 header nav {
@@ -59,32 +57,27 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: ;
-    color: ;
+    background: #000;
     border-radius: 20px;
     text-shadow: none;
 }
 /* Header / Nav bar style end */
-
+h2 {
+    font-size: 20px;
+    color: #84e8ca;
+}
 
 
 /* If i add a footer will be here */
 
 /* sections */
-section {
-    padding: 50px;
-}
 
 /* Hero Style */
 .hero {
-    background-image: url('../assets/images/hero-bg.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 80%;
     display: flex;
     justify-content: right;
     align-content: flex-start;
-    padding: 0
+    padding: 0 8%;
 }
 
 .hero h1 {
@@ -104,7 +97,7 @@ add margin accordingly to the border you choose) */
     text-align: center;
     margin: ;
     padding: ;
-    width: 50%
+    width: 50%;
 }
 
 .primary-border{
@@ -117,31 +110,130 @@ add margin accordingly to the border you choose) */
 /* end section style */
 
 /* About me style */
-.intro p {
-    line-height: 1.7;
-    color: ;
-    width: 80%;
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: center;
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
 }
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h3{
+    font-size: 54px;
+    color: #808080
+}
+
+.col-1 h4 {
+    font-size: 30px;
+    color: #84e8ca;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+.col-1 p {
+    font-size: 24px;
+    color: #000;
+    font-weight: 100;
+}
+
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(#84e8ca, #cafaec);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.col-2 {
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.col-2 .picture {
+    width: 50%;
+}
+
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(#84e8ca, #cafaec);
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translate(150px);
+}
+
 /* About me style end */
 
 /* work style start */
-.applications {
-    background: ;
+main {
+    background-color: #84e8ca;
 }
 
+.col-3{
+    flex-basis: 40%;
+    position: relative;
+    
+}
+
+.col-3 h3{
+    font-size: 54px;
+    color: #000
+    text-align: center;
+}
+.run-buddy {
+    margin: 0 16px 0 16px;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-image: url(./images/hero-bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.project {
+    margin: 0 16px 0 16px;
+    width: calc(100% - 32px);
+    height: 100px;
+    background-image: url(./images/projects.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.applications article h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.applications a {
+    text-decoration: none;
+}
 /* add more css here once work html section is updated */
 /* end work style */
 
 /* Contact me style start */
 .contact {
-    background: ;
+    background: #808080;
 }
 
 .contact h3 {
-    color: ;
+    color: #fff;
 }
 
 .contact-info {
@@ -156,21 +248,35 @@ add margin accordingly to the border you choose) */
 }
 
 .contact-info div{
-    color: ;
+    color:#84e8ca;
 }
 
 .contact-info p {
     margin: 20px 0;
     line-height: 1.5;
-    font-size: 16px;
-    font-style: normal;
+    font-size: 36px;
+    font-style:oblique;
 }
 
-.contact-info a:hover {
-    color: ;
-    background: ;
+.contact-info a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-info a:hover{
+    color: #84e8ca;
 }
 /* Contact me style end */
+
+.history a{
+    text-decoration: none;
+    color: #84e8ca;
+    font-size: 36px;
+}
+
+.history a:hover{
+    color: #808080
+}
 
 /* Utilities */
 .flex-row {
@@ -213,6 +319,36 @@ add margin accordingly to the border you choose) */
 @media screen and (max-width: 768px) {
     section {
         padding: 30px 15px;
+    }
+
+    .intro {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .col-2 {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+    .col-2 picture {
+        width: 77%;
+    }
+
+    .color-box{
+        transform: translateX(75px);
+    }
+
+    .col-1{
+        flex-basis: 100%;
+    }
+
+    .col-1 h3{
+        font-size: 35px;
+    }
+
+    .col-1 h4{
+        font-size: 15px;
     }
 
     /* add more once work section is updated */
