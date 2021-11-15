@@ -1,25 +1,26 @@
 :root {
-    --primary-color:
-    --secondary-color:
-    --tertiary-color: #84e8ca;
+    --gray: #808080;
+    --white: #fff;
+    --turquoise: #84e8ca;
+    --black: #000;
 }
 
 body {
-    color: #84e8ca
+    color: var(--turquoise)
     font-family: helvetica, Arial, sans-serif;
     
 }
 
 header {
     padding: 20px 35px;
-    background-color:#84e8ca ;
+    background-color:var(--turquoise) ;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    border-color: #000;
+    border-color:var(--black);
     z-index: 9999;
 }
 
@@ -28,13 +29,13 @@ header h1 {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
-    color:#fff;
+    color:var(--white);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
     text-decoration: none;
-    color:#fff;
+    color:var(--white);
 }
 
 header nav {
@@ -57,14 +58,14 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: #000;
+    background:var(--black);
     border-radius: 20px;
     text-shadow: none;
 }
 /* Header / Nav bar style end */
 h2 {
     font-size: 20px;
-    color: #84e8ca;
+    color:var(--turquoise);
 }
 
 
@@ -91,22 +92,7 @@ h2 {
 
 /* section title style start (add padding and border
 add margin accordingly to the border you choose) */
-.section-title {
-    font-size: 48px;
-    color: ;
-    text-align: center;
-    margin: ;
-    padding: ;
-    width: 50%;
-}
 
-.primary-border{
-    border-color: ;
-}
-
-.secondary-border {
-    border: ;
-}
 /* end section style */
 
 /* About me style */
@@ -125,19 +111,19 @@ add margin accordingly to the border you choose) */
 
 .col-1 h3{
     font-size: 54px;
-    color: #808080
+    color: var(--gray);
 }
 
 .col-1 h4 {
     font-size: 30px;
-    color: #84e8ca;
+    color: var(--turquoise);
     font-weight: 100;
     margin: 20px 0 10px;
 }
 
 .col-1 p {
     font-size: 24px;
-    color: #000;
+    color:var(--black);
     font-weight: 100;
 }
 
@@ -145,7 +131,7 @@ add margin accordingly to the border you choose) */
     content: '';
     width: 10px;
     height: 57%;
-    background: linear-gradient(#84e8ca, #cafaec);
+    background: linear-gradient(var(--turquoise), #cafaec);
     position: absolute;
     left: -40px;
     top: 8px;
@@ -166,7 +152,7 @@ add margin accordingly to the border you choose) */
     position: absolute;
     right: 0;
     top: 0;
-    background: linear-gradient(#84e8ca, #cafaec);
+    background: linear-gradient(var(--turquoise), #cafaec);
     border-radius: 20px 0 0 20px;
     height: 100%;
     width: 80%;
@@ -178,7 +164,7 @@ add margin accordingly to the border you choose) */
 
 /* work style start */
 main {
-    background-color: #84e8ca;
+    background-color: var(--turquoise);
 }
 
 .col-3{
@@ -189,7 +175,7 @@ main {
 
 .col-3 h3{
     font-size: 54px;
-    color: #000
+    color: var(--black);
     text-align: center;
 }
 .run-buddy {
@@ -216,9 +202,9 @@ main {
     font-weight: 100;
     font-style: italic;
     line-height: 40px;
-    color: #fff;
+    color: var(--white);
     text-align: center;
-    text-shadow: 2px 2px 8px #000;
+    text-shadow: 2px 2px 8px var(--black);
 }
 
 .applications a {
@@ -229,11 +215,11 @@ main {
 
 /* Contact me style start */
 .contact {
-    background: #808080;
+    background: var(--gray);
 }
 
 .contact h3 {
-    color: #fff;
+    color: var(--white);
 }
 
 .contact-info {
@@ -248,7 +234,7 @@ main {
 }
 
 .contact-info div{
-    color:#84e8ca;
+    color:var(--turquoise);
 }
 
 .contact-info p {
@@ -260,22 +246,22 @@ main {
 
 .contact-info a {
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
 }
 
 .contact-info a:hover{
-    color: #84e8ca;
+    color: var(--turquoise);
 }
 /* Contact me style end */
 
 .history a{
     text-decoration: none;
-    color: #84e8ca;
+    color: var(--turquoise);
     font-size: 36px;
 }
 
 .history a:hover{
-    color: #808080
+    color: var(--gray);
 }
 
 /* Utilities */
